@@ -1,0 +1,9 @@
+{
+  "name": "@ahaines/dep",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "import": "./esm/index.js",
+    "require": "./cjs/index.js"
+  }
+}

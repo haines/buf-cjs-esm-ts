@@ -1,0 +1,19 @@
+{
+  "name": "@ahaines/monorepo",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "./app",
+    "./dep",
+    "./lib"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf */dist */*.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3"
+  }
+}
