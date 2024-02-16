@@ -1,0 +1,11 @@
+version: v1
+
+types:
+  include:
+    - pet.v1.Pet
+
+plugins:
+  - plugin: es
+    out: lib/src
+    opt:
+      - target=ts

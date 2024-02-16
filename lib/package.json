@@ -1,0 +1,11 @@
+{
+  "name": "@ahaines/lib",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^1.7.2"
+  }
+}

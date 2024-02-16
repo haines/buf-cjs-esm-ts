@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/node20",
+  "references": [{ "path": "../lib" }],
+  "include": ["src"],
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "outDir": "dist",
+    "rootDir": "src"
+  }
+}

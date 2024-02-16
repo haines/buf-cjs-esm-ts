@@ -1,0 +1,9 @@
+{
+  "name": "@ahaines/app",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@ahaines/lib": "*",
+    "@bufbuild/protobuf": "^1.7.2"
+  }
+}
