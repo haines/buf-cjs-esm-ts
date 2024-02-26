@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "workspaces": [
+    "esnext-bundler",
+    "nodenext"
+  ],
+  "scripts": {
+    "postinstall": "patch-package",
+    "test": "tsc --build && echo '==> ESNext/Bundler' && node esnext-bundler/dist/index.js && echo && echo '==> NodeNext' && node nodenext/dist/index.js"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^1.7.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "^20.11.20",
+    "patch-package": "^8.0.0",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node20",
+  "include": ["src"],
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist",
+    "rootDir": "src"
+  }
+}

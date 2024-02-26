@@ -1,0 +1,7 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./esnext-bundler" },
+    { "path": "./nodenext" }
+  ]
+}

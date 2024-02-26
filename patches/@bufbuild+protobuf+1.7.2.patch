@@ -1,0 +1,56 @@
+diff --git a/node_modules/@bufbuild/protobuf/dist/cjs/index.d.ts b/node_modules/@bufbuild/protobuf/dist/cjs/index.d.ts
+index dab5e3a..c7b4cf3 100644
+--- a/node_modules/@bufbuild/protobuf/dist/cjs/index.d.ts
++++ b/node_modules/@bufbuild/protobuf/dist/cjs/index.d.ts
+@@ -38,3 +38,5 @@ export * from "./google/protobuf/struct_pb.js";
+ export * from "./google/protobuf/timestamp_pb.js";
+ export * from "./google/protobuf/type_pb.js";
+ export * from "./google/protobuf/wrappers_pb.js";
++
++export type TypesLoaded = "CJS";
+diff --git a/node_modules/@bufbuild/protobuf/dist/cjs/index.js b/node_modules/@bufbuild/protobuf/dist/cjs/index.js
+index 544f64f..9f5c626 100644
+--- a/node_modules/@bufbuild/protobuf/dist/cjs/index.js
++++ b/node_modules/@bufbuild/protobuf/dist/cjs/index.js
+@@ -80,3 +80,5 @@ __exportStar(require("./google/protobuf/struct_pb.js"), exports);
+ __exportStar(require("./google/protobuf/timestamp_pb.js"), exports);
+ __exportStar(require("./google/protobuf/type_pb.js"), exports);
+ __exportStar(require("./google/protobuf/wrappers_pb.js"), exports);
++
++console.log("loaded CJS");
+diff --git a/node_modules/@bufbuild/protobuf/dist/esm/index.d.ts b/node_modules/@bufbuild/protobuf/dist/esm/index.d.ts
+index dab5e3a..c7b4cf3 100644
+--- a/node_modules/@bufbuild/protobuf/dist/esm/index.d.ts
++++ b/node_modules/@bufbuild/protobuf/dist/esm/index.d.ts
+@@ -38,3 +38,5 @@ export * from "./google/protobuf/struct_pb.js";
+ export * from "./google/protobuf/timestamp_pb.js";
+ export * from "./google/protobuf/type_pb.js";
+ export * from "./google/protobuf/wrappers_pb.js";
++
++export type TypesLoaded = "ESM";
+diff --git a/node_modules/@bufbuild/protobuf/dist/esm/index.js b/node_modules/@bufbuild/protobuf/dist/esm/index.js
+index 5af06cc..3b46a7c 100644
+--- a/node_modules/@bufbuild/protobuf/dist/esm/index.js
++++ b/node_modules/@bufbuild/protobuf/dist/esm/index.js
+@@ -40,3 +40,5 @@ export * from "./google/protobuf/struct_pb.js";
+ export * from "./google/protobuf/timestamp_pb.js";
+ export * from "./google/protobuf/type_pb.js";
+ export * from "./google/protobuf/wrappers_pb.js";
++
++console.log("loaded ESM");
+diff --git a/node_modules/@bufbuild/protobuf/dist/proxy/index.d.ts b/node_modules/@bufbuild/protobuf/dist/proxy/index.d.ts
+index dbdeac7..7630aa8 100644
+--- a/node_modules/@bufbuild/protobuf/dist/proxy/index.d.ts
++++ b/node_modules/@bufbuild/protobuf/dist/proxy/index.d.ts
+@@ -1 +1,3 @@
+ export * from "../cjs/index.js";
++
++export type TypesLoaded = "proxy";
+diff --git a/node_modules/@bufbuild/protobuf/dist/proxy/index.js b/node_modules/@bufbuild/protobuf/dist/proxy/index.js
+index dbdeac7..6f1d895 100644
+--- a/node_modules/@bufbuild/protobuf/dist/proxy/index.js
++++ b/node_modules/@bufbuild/protobuf/dist/proxy/index.js
+@@ -1 +1,3 @@
+ export * from "../cjs/index.js";
++
++console.log("loaded proxy")

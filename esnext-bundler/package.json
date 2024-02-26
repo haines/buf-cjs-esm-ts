@@ -1,0 +1,5 @@
+{
+  "name": "@ahaines/esnext",
+  "private": true,
+  "type": "module"
+}
